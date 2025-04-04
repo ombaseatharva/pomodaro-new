@@ -1,60 +1,63 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #e9ecef;
-}
-
-.timer-container {
+  font-family: 'Poppins', sans-serif;
+  background: url('/assets/img.png') no-repeat center center/cover; 
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
-  background: rgb(164, 101, 46);
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(249, 247, 247, 0.1);
+  height: 100vh;
+  margin: 0;
+  background-color:red ;
+  
 }
 
-.inputs input {
-  width: 50px;
-  margin: 5px;
-  padding: 5px;
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Light overlay for readability */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  width: 400px;
 }
 
-.time-display {
-  font-size: 3rem;
-  margin: 10px 0;
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
 }
 
-.controls button {
-  margin: 5px;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adjusted spacing */
+  margin-bottom: 20px;
+}
+
+input {
+  width: 60px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.controls button:first-child {
-  background: rgb(89, 196, 89);
-  color: rgb(0, 0, 0);
+.set-time-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.controls button:last-child {
-  background: rgb(249, 54, 54);
-  color: white;
-  .set-time-button {
-    margin: 10px;
-    padding: 10px 15px;
-    background: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  .set-time-button:hover {
-    background: darkblue;
-  }
-  
+.set-time-btn:hover {
+  background: #0056b3;
 }
